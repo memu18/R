@@ -1,9 +1,9 @@
 let data = [
-  ["laught at A", "Aを笑う"],
+  ["laugh at A", "Aを笑う"],
   ["arrive at A", "Aに到着する"],
   ["get to A", "Aに到着する"],
   ["die of A", "Aが原因で死ぬ"],
-  ["belive in A", "Aを良いと信じる"],
+  ["believe in A", "Aを良いと信じる"],
   ["look for A", "Aを探す"],
   ["stay with A", "Aのところに滞在する"],
   ["wait up for A", "Aを寝ないで待つ"],
