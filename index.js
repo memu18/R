@@ -49,12 +49,29 @@ function check() {
       document.getElementById("text").innerHTML =data[random][1] + ": <span class=\"google\" style=\"color:red\"><a href=https://www.google.co.jp/search?q="+input.replace(' ','+')+" target=\"_blank\">"+input+"</a></span><a href=https://ejje.weblio.jp/content/"+query+" target=\"_blank\" title=\""+(random+1)+"\">"+data[random][0]+"</a>" + document.getElementById("text").innerHTML;
       c = 0;
   }
+  if ('speechSynthesis' in window) {
+    const uttr = new SpeechSynthesisUtterance();
+    uttr.text = data[random][0];
+    uttr.lang = 'en-US';
+    const voices = speechSynthesis.getVoices();
+    for (let i = 0; i < voices.length; i++) {
+      if (voices[i].lang === 'en-US') {
+        uttr.voice = voices[i];
+      }
+    }
+    window.speechSynthesis.speak(uttr);
+
+ }
+ else
+ {
+
   let audio = new Audio();
   if(!audioplaying){
     audio = new Audio('https://weblio.hs.llnwd.net/e8/audio/' + data[random][0] + '.mp3');
     if (mode===0)audioplaying = true;
     audio.play();
   }
+}
   document.getElementById('web').contentWindow.location.replace("https://ejje.weblio.jp/turbo/"+ query);
   next();
   document.getElementById("input").value = "";
