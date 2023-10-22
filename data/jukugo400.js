@@ -71,7 +71,7 @@ let data = [
   ["go with A", "Aに似合う、Aに調和する"],
   ["go through A", "Aを経験する"],
   ["correspond with A", "Aと文通する"],
-  ["contribute", "Aに貢献する、Aに寄与する"],
+  ["contribute to A", "Aに貢献する、Aに寄与する"],
   ["call on A", "A(人)を訪問する"],
   ["call for A", "Aを必要とする、Aを要求する"],
   ["brush up A", "Aをやり直す、Aに磨きをかける"],
