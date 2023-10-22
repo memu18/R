@@ -382,7 +382,7 @@ let data = [
   ["in the face of A", "Aをものともせずに"],
   ["in favor of A", "Aに賛成して"],
   ["in place of A", "Aの代わりに"],
-  ["from A's point of vew", "Aの見地からすれば"],
+  ["from A's point of view", "Aの見地からすれば"],
   ["by way of A", "Aを経由して"],
   ["by way of A", "Aのつもりで"],
   ["in advance of A", "Aより進んで、Aに先立"],
