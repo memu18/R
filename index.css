@@ -36,7 +36,7 @@ a::after{
 }
 body{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-gap: 30px;
   margin: 20px 20px 20px 20px;
 }
