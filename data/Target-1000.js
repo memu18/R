@@ -439,8 +439,7 @@
     ["dispose of", "～を処分する、～を平らげる"],
     ["approve of", "～に賛成する、～を承認する"],
     ["boast of", "～を自慢する、～を誇らしげに話す"],
-    "[""become of"", ""（what, whatever を主語にして）
-    ～はどうなるか""],"
+    ["become of", "（what, whatever を主語にして）～はどうなるか"],
     ["derive from", "～に由来する、～から出ている"],
     ["aim at", "～を目指す、～を狙う"],
     ["interfere with", "～の邪魔をする、～を妨げる"],
