@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Z2JLEJDD6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-7Z2JLEJDD6');
+    </script>
+    <meta charset="utf-8" />
+    
+    <title>v1.10</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../var.js"></script>
+    <script type="text/javascript" src="../getparam.js"></script>
+    <script type="text/javascript" src="load.js"></script>
+    <script type="text/javascript" src="../index.js"></script>
+  </head>
+  <body>
+    <div id="question"></div>
+    <input type="text" id="input" onkeydown="key();">
+    <div id="text"></div>
+
+    <div class="modal_wrap">
+    <input id="trigger" type="checkbox">
+      <div class="modal_overlay">
+        <label for="trigger" class="modal_trigger"></label>
+        <div class="modal_content">
+          <label for="trigger" class="close_button">X</label>
+          <h2>Data sets</h2>
+          <a href="?d=Target-1900-6">Target-1900 6訂版</a>
+          <a href="?d=upgrade">UPGRADE</a>
+          <a href="?d=jukugo100">熟語100</a>
+          <a href="?d=jukugo400">熟語400</a>
+          <a href="?d=Target-1900-5">Target-1900 5訂版</a>
+          <a href="?d=teppeki">鉄壁</a>
+          <a href="?d=oxford-3000">oxford-3000</a>
+          <a href="?d=Target-1000">Target-1000 5訂版(未完成)</a>
+          <a href="?d=Advanced">Advanced</a>
+        </div>
+      </div>
+    </div>
+    <label for="trigger" class="open_button">SETTING</label>
+  </body>
+</html>

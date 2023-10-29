@@ -1,0 +1,131 @@
+#question{
+  text-align: center;
+  display: inline-block;
+  grid-column: 2;
+  grid-row: 1/10;
+}
+
+a{
+  transition: color .3s;
+  color: #008888;
+  text-decoration: none;
+}
+a:hover{
+  color: #aaaa00;
+}
+a::after{
+  content: "\a";
+  white-space: pre;
+}
+.google a{
+  color: red;
+}
+.google a::after{
+  white-space: normal;
+}
+#text{
+  grid-column: 1;
+  grid-row: 3;
+  
+}
+body{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin: 20px 20px 20px 20px;
+}
+input[type='text'] {
+
+  grid-column: 1;
+  grid-row: 2;
+
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #0044ff;
+	border: none;
+	border-bottom: 2px solid #1b2538;
+	background: transparent;
+}
+input[type='text']:focus {
+	border-bottom: 2px solid #da3c41;
+	outline: none;
+}
+
+.modal_wrap input{
+  display: none;
+}
+
+.modal_overlay{
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0s 0.5s;
+  transform: scale(0);
+}
+
+.modal_trigger{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.modal_content{
+  align-self: flex-start;
+  width: 60%;
+  padding: 30px 30px 15px;
+  box-sizing: border-box;
+  background: #fff;
+  line-height: 1.4em;
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
+
+.close_button{
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal_wrap input:checked ~ .modal_overlay{
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s;
+}
+
+.modal_wrap input:checked ~ .modal_overlay .modal_content{
+  transform: translateY(20px);
+}
+
+.open_button{
+  position: fixed;
+  top: 1;
+  right: 0;
+  bottom: 0;
+  left: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  margin: auto;
+  padding: 8px 16px;
+  color: #444;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  border-radius: 16px;
+  cursor: pointer;
+}

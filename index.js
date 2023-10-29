@@ -28,7 +28,7 @@ window.onload = function(){
     ans=1;
     }
   if(end>data.length)window.location.href="?d=Target-1900-6";
-  document.getElementById("web").height=window.innerHeight-30;
+  if(document.getElementById("web"))document.getElementById("web").height=window.innerHeight-30;
   input.focus();
   next();
 };
@@ -62,22 +62,9 @@ function check() {
     window.speechSynthesis.speak(uttr);
 
  }
- else
- {
-
-  let audio = new Audio();
-  if(!audioplaying){
-    audio = new Audio('https://weblio.hs.llnwd.net/e8/audio/' + data[random][0] + '.mp3');
-    if (mode===0)audioplaying = true;
-    audio.play();
-  }
-}
-  document.getElementById('web').contentWindow.location.replace("https://ejje.weblio.jp/turbo/"+ query);
+ if(document.getElementById("web"))document.getElementById('web').contentWindow.location.replace("https://ejje.weblio.jp/turbo/"+ query);
   next();
   document.getElementById("input").value = "";
-  audio.addEventListener('ended', function(){
-    audioplaying = false;
-    })
 }
 
 function next(){

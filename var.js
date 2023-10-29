@@ -10,4 +10,3 @@ let random = 0;
 let random_l = 0;
 let c = 1;
 let n = 0;
-let audioplaying = false;
