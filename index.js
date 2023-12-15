@@ -98,7 +98,8 @@ function next(){
 
 function key() {
   if(window.event.keyCode == 13) check();
-  if(window.event.keyCode == 39)
+  if(window.event.keyCode == 38) input.value=data[random][0];
+  if(window.event.keyCode == 	39)
   {
     input.value=data[random][0].substr(0,c);
     c++;
