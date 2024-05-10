@@ -69,6 +69,7 @@ function check() {
 
 function next(){
   if(r_array.length == end - start){
+    document.cookie='r_array='
     alert("全問正解！");
     document.getElementById("input").disabled = true;
   }
