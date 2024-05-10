@@ -7,8 +7,13 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'G-7Z2JLEJDD6');
+    </script>
+    <script>
+      function clear_cache(){
+        document.cookie='r_array='
+        alert('クッキーを削除しました。');
+      }
     </script>
     <meta charset="utf-8" />
     
@@ -46,6 +51,7 @@
           <a href="?d=oxford-3000">oxford-3000</a>
           <a href="?d=Target-1000">Target-1000 5訂版(未完成)</a>
           <a href="?d=Advanced">Advanced</a>
+          <button onclick="clear_cache()">Clear cache</button>
         </div>
       </div>
     </div>

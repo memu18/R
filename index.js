@@ -32,6 +32,7 @@ window.onload = function(){
   input.focus();
   next();
 };
+
 function check() {
   var input = document.getElementById("input").value;
   query = data[random][0].replace(' ', '+' );
