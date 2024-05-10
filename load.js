@@ -7,3 +7,13 @@ if (getParam('d')) {
 else{
 	window.location.href = '?d=Target-1900-6';
 }
+
+const cookies = document.cookie;
+const array = cookies.split(';');
+
+array.forEach(function(value) {
+	const content = value.split('=');
+	if (content[0]==' r_array'){
+		r_array = content[1].split(',');
+	}
+  })

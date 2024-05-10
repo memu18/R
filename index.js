@@ -38,6 +38,7 @@ function check() {
   if (input == data[random][0]) {
     document.getElementById("text").innerHTML = data[random][1] + ": " + "<span style=\"color:blue\">o: </span>"+"<a href=https://ejje.weblio.jp/content/"+ query+ " target=\"_blank\" title=\""+(random+1)+"\">" + data[random][0] + "</a>" + document.getElementById("text").innerHTML;
     if(remove == 1) r_array.push(random);
+    document.cookie='r_array=' + r_array+'; max-age=604800';
     document.title=r_array.length;
     c++;
   }
@@ -60,7 +61,6 @@ function check() {
       }
     }
     window.speechSynthesis.speak(uttr);
-
  }
  if(document.getElementById("web"))document.getElementById('web').contentWindow.location.replace("https://ejje.weblio.jp/turbo/"+ query);
   next();
@@ -92,14 +92,13 @@ function next(){
       });
       random=(end-start)*(start+(end-1))/2-q;
     }
-  
   }
 }
 
 function key() {
   if(window.event.keyCode == 13) check();
   if(window.event.keyCode == 38) input.value=data[random][0];
-  if(window.event.keyCode == 	39)
+  if(window.event.keyCode == 39)
   {
     input.value=data[random][0].substr(0,c);
     c++;
