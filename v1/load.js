@@ -15,7 +15,7 @@ array.forEach(function(value) {
 	const content = value.split('=');
 	if (content[0]==' r_array'){
 		const r_ = content[1].split(',');
-		if(r_ != NaN)r_.forEach(r => {
+		if(r_ != '')r_.forEach(r => {
 			r_array.push(parseInt(r))
 		});
 	}
