@@ -14,6 +14,9 @@ const array = cookies.split(';');
 array.forEach(function(value) {
 	const content = value.split('=');
 	if (content[0]==' r_array'){
-		r_array = parseInt(content[1].split(','));
+		const r_ = content[1].split(',');
+		r_.forEach(r => {
+			r_array.push(parseInt(r))
+		});
 	}
   })
