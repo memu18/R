@@ -1,5 +1,4 @@
 window.onload = function(){
-  document.cookie = 'SameSite=strict';
   end = data.length;
   s=e=r=m=false;
   if (getParam('s')) start = Number(getParam('s') - 1);
