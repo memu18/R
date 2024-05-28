@@ -1,6 +1,6 @@
 window.onload = function(){
   if (getParam('c')) enable_cookie = Number(getParam('c'));
-  else s=true;
+  else window.location.href = location.search + '&c=0';
   end = data.length;
   s=e=r=m=false;
   if (getParam('s')) start = Number(getParam('s') - 1);

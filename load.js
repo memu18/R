@@ -25,6 +25,3 @@ if(getParam('c')){
 		})
 	}
 }
-else{
-	window.location.href = location.search + '&c=0';
-}
