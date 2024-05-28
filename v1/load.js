@@ -9,7 +9,7 @@ else{
 }
 
 if(getParam('c')){
-	let c = getParam('c');
+	let c = Number(getParam('c'));
 	if(c==1){
 		const cookies = document.cookie;
 		const array = cookies.split(';');
