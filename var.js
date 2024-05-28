@@ -5,6 +5,7 @@ let font = '';
 let voice = 0;
 let remove = 0;
 let r_array = [];
+let enable_cookie = 0
 
 let random = 0;
 let random_l = 0;

@@ -1,4 +1,6 @@
 window.onload = function(){
+  if (getParam('c')) enable_cookie = Number(getParam('c'));
+  else s=true;
   end = data.length;
   s=e=r=m=false;
   if (getParam('s')) start = Number(getParam('s') - 1);
@@ -38,7 +40,7 @@ function check() {
   if (input == data[random][0]) {
     document.getElementById("text").innerHTML = data[random][1] + ": " + "<span style=\"color:blue\">o: </span>"+"<a href=https://ejje.weblio.jp/content/"+ query+ " target=\"_blank\" title=\""+(random+1)+"\">" + data[random][0] + "</a>" + document.getElementById("text").innerHTML;
     if(remove == 1) r_array.push(random);
-    document.cookie='r_array=' + r_array+'; max-age=604800';
+    if(enable_cookie = 1)document.cookie='r_array=' + r_array+'; max-age=604800';
     document.title=r_array.length;
     c++;
   }
@@ -69,7 +71,7 @@ function check() {
 
 function next(){
   if(r_array.length == end - start){
-    document.cookie='r_array='
+    if(enable_cookie = 1)document.cookie='r_array='
     alert("全問正解！");
     document.getElementById("input").disabled = true;
   }
